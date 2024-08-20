@@ -1,0 +1,263 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\git\\unity\\RPJ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\git\\unity\\RPJ\\Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|d:\\git\\unity\\rpj\\assets\\scripts\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|d:\\git\\unity\\rpj\\assets\\scripts\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playergroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playergroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playeranimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeranimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerwalljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerwalljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerwallslipstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerwallslipstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerairstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerairstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GridEditorUtility.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCMAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T12:39:19.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BackGround.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\BackGround.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BackGround.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\BackGround.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BackGround.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T12:23:19.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerGroundState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerGroundState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerGroundState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerGroundState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerGroundState.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:18:13.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayeridleState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayeridleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayeridleState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayeridleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayeridleState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:49:37.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerPrimaryAttack.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerPrimaryAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerPrimaryAttack.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerPrimaryAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerPrimaryAttack.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T09:09:15.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerAnimationTriggers.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerAnimationTriggers.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAnimationTriggers.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerAnimationTriggers.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerAnimationTriggers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T09:24:50.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAQwEcAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T08:15:12.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerState.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAwC8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:39:30.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlayerDashState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerDashState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerDashState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerDashState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerDashState.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvx0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T12:58:47.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayerWallJumpState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerWallJumpState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerWallJumpState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerWallJumpState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerWallJumpState.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAIwBkAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:50:30.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerMoveState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerMoveState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMoveState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerMoveState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMoveState.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAxwBgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:49:29.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerWallSlipState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerWallSlipState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerWallSlipState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerWallSlipState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerWallSlipState.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAzwBwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:23:36.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlayerAirState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerAirState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAirState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerAirState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerAirState.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwBcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:35:45.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlayerJumpState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerJumpState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerJumpState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerJumpState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerJumpState.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwAwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:36:03.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PlayerStateMachine.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStateMachine.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerStateMachine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:39:14.386Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
