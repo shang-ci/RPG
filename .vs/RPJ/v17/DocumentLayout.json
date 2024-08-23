@@ -3,257 +3,446 @@
   "WorkspaceRootPath": "D:\\git\\unity\\RPJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\git\\unity\\RPJ\\Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\skill\\skillcontroller\\swordskill_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skill\\skillcontroller\\swordskill_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|d:\\git\\unity\\rpj\\assets\\scripts\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|d:\\git\\unity\\rpj\\assets\\scripts\\skill\\sword_skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skill\\sword_skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|d:\\git\\unity\\rpj\\assets\\scripts\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\playeraimswordstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeraimswordstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\playeranimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeranimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playergroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playergroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\playercatchswordstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercatchswordstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playeranimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeranimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\playergroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playergroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\skeleton\\skeletongroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\skeleton\\skeletongroundstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\skillmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\skillmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerwalljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerwalljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\playermanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerwallslipstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerwallslipstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\skill\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skill\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerairstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerairstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\skill\\skillcontroller\\clone_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skill\\skillcontroller\\clone_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\skill\\clone_skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skill\\clone_skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\skill\\dash_skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skill\\dash_skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\skeleton\\skeletonbattlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\skeleton\\skeletonbattlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\skeleton\\skeletonmovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\skeleton\\skeletonmovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\skeleton\\enemy_skeleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\skeleton\\enemy_skeleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\skeleton\\enemy_skeletonanimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\skeleton\\enemy_skeletonanimationtriggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\skeleton\\skeletonstunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\skeleton\\skeletonstunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\enemy\\skeleton\\skeletonattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\skeleton\\skeletonattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\entityfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entityfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|D:\\git\\unity\\RPJ\\assets\\scripts\\player\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCFE2DD6-B2BE-EF8B-7888-C5F791B12EF2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerprimaryattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 213,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GridEditorUtility.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.2d.tilemap\\Editor\\GridEditorUtility.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwCMAAABVAAAA",
+              "Title": "SwordSkill_Controller.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\SkillController\\SwordSkill_Controller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skill\\SkillController\\SwordSkill_Controller.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\SkillController\\SwordSkill_Controller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skill\\SkillController\\SwordSkill_Controller.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAUwFAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T12:39:19.612Z",
+              "WhenOpened": "2024-08-23T03:07:44.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BackGround.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\BackGround.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BackGround.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\BackGround.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BackGround.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwQAAAATAAAA",
+              "Title": "Sword_Skill.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\Sword_Skill.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skill\\Sword_Skill.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\Sword_Skill.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skill\\Sword_Skill.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwBoAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T12:23:19.596Z",
+              "WhenOpened": "2024-08-23T02:55:13.41Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerGroundState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerGroundState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerGroundState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerGroundState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerGroundState.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T08:18:13.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayeridleState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayeridleState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayeridleState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayeridleState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayeridleState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T06:49:37.905Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PlayerPrimaryAttack.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerPrimaryAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerPrimaryAttack.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerPrimaryAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerPrimaryAttack.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Title": "PlayerAimSwordState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerAimSwordState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAimSwordState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerAimSwordState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAimSwordState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T09:09:15.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T02:37:28.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerAnimationTriggers.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerAnimationTriggers.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimationTriggers.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerAnimationTriggers.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimationTriggers.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwBkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:13:47.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerCatchSwordState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerCatchSwordState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerCatchSwordState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerCatchSwordState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerCatchSwordState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T02:36:24.756Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PlayerAnimationTriggers.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerAnimationTriggers.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAnimationTriggers.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerAnimationTriggers.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerAnimationTriggers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAAiAAAA",
+              "Title": "PlayeridleState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayeridleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayeridleState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayeridleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayeridleState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T09:24:50.273Z"
+              "WhenOpened": "2024-08-23T07:31:27.442Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Player.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAQwEcAAABZAAAA",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T08:15:12.646Z"
+              "WhenOpened": "2024-08-22T11:48:12.185Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PlayerState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerState.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAwC8AAAAdAAAA",
+              "Title": "PlayerGroundState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerGroundState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerGroundState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerGroundState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerGroundState.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAcwBgAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T06:39:30.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PlayerDashState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerDashState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerDashState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerDashState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerDashState.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAADwvx0AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T12:58:47.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PlayerWallJumpState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerWallJumpState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerWallJumpState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerWallJumpState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerWallJumpState.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAIwBkAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T08:50:30.291Z"
+              "WhenOpened": "2024-08-23T02:51:23.593Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "PlayerMoveState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerMoveState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMoveState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerMoveState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMoveState.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAxwBgAAAAzAAAA",
+              "Title": "SkeletonGroundState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonGroundState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonGroundState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonGroundState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonGroundState.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBAAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T06:49:29.624Z"
+              "WhenOpened": "2024-08-22T03:43:12.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SkillManager.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\SkillManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\SkillManager.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\SkillManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\SkillManager.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADwvxYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T09:49:22.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayerManger.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerManger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerManger.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerManger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerManger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T09:43:18.339Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "PlayerWallSlipState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerWallSlipState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerWallSlipState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerWallSlipState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerWallSlipState.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAzwBwAAAATAAAA",
+              "Title": "Skill.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\Skill.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skill\\Skill.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\Skill.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skill\\Skill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T08:23:36.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PlayerAirState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerAirState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAirState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerAirState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerAirState.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAwBcAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T08:35:45.954Z"
+              "WhenOpened": "2024-08-22T10:01:37.147Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "PlayerJumpState.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerJumpState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerJumpState.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerJumpState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerJumpState.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAwAwAAABBAAAA",
+              "Title": "Clone_Skill.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\Clone_Skill.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skill\\Clone_Skill.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\Clone_Skill.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skill\\Clone_Skill.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvxwAAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T08:36:03.919Z"
+              "WhenOpened": "2024-08-22T12:14:13.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Clone_Controller.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\SkillController\\Clone_Controller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skill\\SkillController\\Clone_Controller.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\SkillController\\Clone_Controller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skill\\SkillController\\Clone_Controller.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAvwDMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T12:12:01.9Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "PlayerStateMachine.cs",
-              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStateMachine.cs",
-              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\PlayerStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerStateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Title": "PlayerDashState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerDashState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerDashState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerDashState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerDashState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T06:39:14.386Z"
+              "WhenOpened": "2024-08-22T12:16:52.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Dash_Skill.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\Dash_Skill.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Skill\\Dash_Skill.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Skill\\Dash_Skill.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Skill\\Dash_Skill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T10:14:23.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SkeletonBattleState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonBattleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonBattleState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonBattleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonBattleState.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvxEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T03:49:49.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Enemy_Skeleton.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\Enemy_Skeleton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Skeleton\\Enemy_Skeleton.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\Enemy_Skeleton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Skeleton\\Enemy_Skeleton.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAcwC0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T03:24:45.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Enemy_SkeletonAnimationTriggers.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\Enemy_SkeletonAnimationTriggers.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Skeleton\\Enemy_SkeletonAnimationTriggers.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\Enemy_SkeletonAnimationTriggers.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Skeleton\\Enemy_SkeletonAnimationTriggers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T07:29:02.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SkeletonMoveState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonMoveState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonMoveState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonMoveState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonMoveState.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T03:43:30.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T03:15:27.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Entity.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Entity.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Entity.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Entity.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAswFUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:09:10.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SkeletonStunState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonStunState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonStunState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonStunState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonStunState.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAIwBoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:52:41.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SkeletonAttackState.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonAttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonAttackState.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Enemy\\Skeleton\\SkeletonAttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Skeleton\\SkeletonAttackState.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwBwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T03:47:40.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EntityFX.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\EntityFX.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EntityFX.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\EntityFX.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EntityFX.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwCMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:12:36.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PlayerPrimaryAttack.cs",
+              "DocumentMoniker": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
+              "ToolTip": "D:\\git\\unity\\RPJ\\Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerPrimaryAttack.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:45:39.453Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 59,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
