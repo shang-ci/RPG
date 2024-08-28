@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class Enemy : Entity
     [Header("Move info")]
     public float moveSpeed;
     public float idleTime;
+    private float defaultMoveSpeed;
 
     [Header("Stun info")]
     public float stunDuration;
@@ -23,12 +25,15 @@ public class Enemy : Entity
     public float battleTime;
 
     public EnemyStateMachine stateMachine { get; private set; }
+    public string lastAnimBoolName {  get; private set; }
 
     protected override void Awake()
     {
         base.Awake();
 
         stateMachine = new EnemyStateMachine();
+
+        defaultMoveSpeed = moveSpeed;
     }
 
     protected override void Update()
@@ -36,11 +41,58 @@ public class Enemy : Entity
         base.Update();
 
         stateMachine.currentState.Update();
-
-        Debug.Log(IsPlayerDectected().collider.gameObject.name);
     }
 
-    public  virtual void OpenCounterAttackWindow()
+    public override void SlowEntityBy(float _slowPercentage, float _slowDuration)
+    {
+        //base.SlowEntityBy(_slowPercentage, _slowDuration);
+        moveSpeed = moveSpeed * (1 - _slowPercentage);
+        anim.speed = anim.speed * (1 - _slowPercentage);
+
+        Invoke("ReturnDefaultSpeed", _slowDuration);
+
+    }
+
+    protected override void ReturnDefaultSpeed()
+    {
+        base.ReturnDefaultSpeed();
+
+        moveSpeed = defaultMoveSpeed;
+    }
+
+
+    public virtual void AssignLastAnimName(string _animBoolName)
+    {
+        lastAnimBoolName = _animBoolName;
+    }
+
+
+    public virtual void FreezeTime(bool _timeFroze)
+    {
+        if(_timeFroze)
+        {
+            moveSpeed = 0;
+            anim.speed = 0;
+        }
+        else
+        {
+            moveSpeed = defaultMoveSpeed;
+            anim.speed = 1;
+        }
+    }
+
+    protected virtual IEnumerator FreezeeTimerFor(float _seconds)
+    {
+        FreezeTime(true);
+
+        yield return new WaitForSeconds(_seconds);
+
+        FreezeTime(false); 
+    }
+
+
+    #region Counter Attack Window
+    public virtual void OpenCounterAttackWindow()
     {
         canBeStunned = true;
         counterImage.SetActive(true);
@@ -51,6 +103,7 @@ public class Enemy : Entity
         canBeStunned = false;
         counterImage.SetActive(false);
     }
+    #endregion
 
     //яётн
     protected virtual bool CanBeStunned()

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Clone_Skill_Controller是绑在Clone体上的也就是Prefah上的
+
 public class Clone_Skill_Controller : MonoBehaviour
 {
     private Player player;
-    private Animator anim;//声明animator
-    private SpriteRenderer sr;//定义Sr
+    private Animator anim;
+    private SpriteRenderer sr;
     [SerializeField] private float colorLoosingSpeed;//加速消失时间 
     [SerializeField] private float cloneTimer;
 
@@ -15,10 +15,10 @@ public class Clone_Skill_Controller : MonoBehaviour
     [SerializeField] private float attackCheckRadius = .8f;
     private Transform closestEnemy;
 
-    private int facingDir = 1;//这个是控制位置的，产生的克隆体的位置能在敌人外侧
+    private int facingDir = 1;//产生的克隆体的位置能在敌人背后——用于下面的canDuplicateClone
 
-    private bool canDuplicateClone;
-    private float chanceToDuplicate;
+    private bool canDuplicateClone;//让克隆有几率再次生成克隆人
+    private float chanceToDuplicate;//几率
 
 
     private void Awake()
@@ -41,14 +41,17 @@ public class Clone_Skill_Controller : MonoBehaviour
         }
     }
 
-    public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack)
+    public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 _offset, Transform _closestEnemy,bool _canDuplicateClone, float _chanceToDuplicate)
     {
         if (canAttack)
             anim.SetInteger("AttackNumber", Random.Range(1, 4));
 
-        transform.position = newTransform.position;
+        transform.position = newTransform.position + _offset;
         cloneTimer = cloneDuration;
 
+        closestEnemy = _closestEnemy;
+        canDuplicateClone = _canDuplicateClone;
+        chanceToDuplicate = _chanceToDuplicate;
         FaceClosestTarget();
     }
 
@@ -64,32 +67,29 @@ public class Clone_Skill_Controller : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             if (collider.GetComponent<Enemy>() != null)
-                collider.GetComponent<Enemy>().Damage();
+            {
+                if(player == null)
+                Debug.Log("player null");
+                PlayerManger.instance.player.stats.DoDamage(collider.GetComponent<CharacterStats>());
+            }
+
+
+            if (canDuplicateClone)
+            {
+                //连续生成克隆人
+                if(Random.Range(0,100) < chanceToDuplicate)
+                {
+                    SkillManager.instance.clone.CreateClone(collider.transform, new Vector3(1.5f * facingDir, 0));
+                }
+            }
         }
     }
 
     private void FaceClosestTarget()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 25);
-
-        float closestDistance = Mathf.Infinity;
-
-        foreach (var hit in colliders)
-        {
-            if(hit.GetComponent<Enemy>() != null)
-            {
-                float distanceToEnemy = Vector2.Distance(transform.position, hit.transform.position);
-
-                if(distanceToEnemy < closestDistance)
-                {
-                    closestDistance = distanceToEnemy;
-                    closestEnemy = hit.transform;
-                }
-            }
-        }
-
         if(closestEnemy != null && transform.position.x > closestEnemy.position.x)
         {
+            facingDir = -1;
             transform.Rotate(0, 180, 0);
         }
     }

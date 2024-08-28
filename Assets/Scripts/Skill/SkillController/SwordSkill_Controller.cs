@@ -6,7 +6,6 @@ using UnityEngine.InputSystem.iOS;
 
 public class SwordSkill_Controller : MonoBehaviour
 {
-    [SerializeField] private float returnSpeed = 12;
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -16,12 +15,15 @@ public class SwordSkill_Controller : MonoBehaviour
     private bool canRotate = true;
     private bool isReturning;//收回sword
 
+    private float returnSpeed = 12;
+    private float freezeTimeDuration;//定住的时间
+
     [Header("Pierce info")]
     [SerializeField] private float pierceAmount;
 
 
     [Header("Bounce info")]
-    [SerializeField] private float bounceeSpeed;
+    private float bounceeSpeed;
     private bool isBounce;
     private int bounceAmount;
     private List<Transform> enemyTraget;
@@ -65,6 +67,11 @@ public class SwordSkill_Controller : MonoBehaviour
         SpinLogic();
     }
 
+    private void DestroyMe()
+    {
+        Destroy(gameObject);
+    }
+
     private void SpinLogic()
     {
         if (isSpinning)
@@ -98,7 +105,7 @@ public class SwordSkill_Controller : MonoBehaviour
                     foreach (var hit in colluders)
                     {
                         if (hit.GetComponent<Enemy>() != null)
-                            hit.GetComponent<Enemy>().Damage();
+                            SwordSkillDamge(hit.GetComponent<Enemy>());
                     }
                 }
             }
@@ -120,7 +127,8 @@ public class SwordSkill_Controller : MonoBehaviour
 
             if (Vector2.Distance(transform.position, enemyTraget[tragetIndex].position) < .1f)
             {
-                enemyTraget[tragetIndex].GetComponent<Enemy>().Damage();
+                //冻住敌人在trigger检测时，不是每个类型的sword都可以冻结吗，，还要在重复加
+                SwordSkillDamge(enemyTraget[tragetIndex].GetComponent<Enemy>());
 
                 tragetIndex++;
                 bounceAmount--;
@@ -137,9 +145,11 @@ public class SwordSkill_Controller : MonoBehaviour
         }
     }
 
-    public void SetupSword(Vector2 dir, float gravityScale, Player _player)
+    public void SetupSword(Vector2 dir, float gravityScale, Player _player, float _freezeTimeDuration, float _returnSpeed)
     {
         player = _player;
+        freezeTimeDuration = _freezeTimeDuration;
+        returnSpeed = _returnSpeed;
 
         rb.velocity = dir;
         rb.gravityScale = gravityScale;
@@ -148,6 +158,8 @@ public class SwordSkill_Controller : MonoBehaviour
             anim.SetBool("Rotation",true);
 
         spinDirection = Mathf.Clamp(rb.velocity.x, -1, 1);
+
+        Invoke("DestroyMe", 6);
     }
 
     public void SetuopPierce(int _pierceAmount)
@@ -155,11 +167,11 @@ public class SwordSkill_Controller : MonoBehaviour
         pierceAmount = _pierceAmount;
     }
 
-    public void SetupBounce(bool _isBounce, int _amountOfBounce)
+    public void SetupBounce(bool _isBounce, int _amountOfBounce, float _bounceSpeed)
     {
         isBounce = _isBounce;
         bounceAmount = _amountOfBounce;
-
+        bounceeSpeed = _bounceSpeed;
         enemyTraget = new List<Transform>();
     }
 
@@ -185,11 +197,23 @@ public class SwordSkill_Controller : MonoBehaviour
         if (isReturning)
             return;
 
-        collision.GetComponent<Enemy>()?.Damage();
+        if(collision.GetComponent<Enemy>() != null)
+        {
+            Enemy enemy = collision.GetComponent<Enemy>();
+            SwordSkillDamge(enemy);
+        }
 
         SetupTargetsForBounce(collision);
 
         StuckInto(collision);
+    }
+
+    private void SwordSkillDamge(Enemy enemy)
+    {
+        // enemy.DamageEffect();
+        //改变攻击方式，物理和三种法术攻击
+        PlayerManger.instance.player.stats.DoDamage(enemy.GetComponent<CharacterStats>());
+        enemy.StartCoroutine("FreezeeTimerFor", freezeTimeDuration);
     }
 
     private void SetupTargetsForBounce(Collider2D collision)

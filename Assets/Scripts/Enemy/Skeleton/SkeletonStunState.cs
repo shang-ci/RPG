@@ -4,6 +4,7 @@ public class SkeletonStunState : EnemyState
 {
     private Enemy_Skeleton enemy;
 
+
     public SkeletonStunState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Skeleton enemy) : base(enemyBase, stateMachine, animBoolName)
     {
         this.enemy = enemy;
@@ -13,7 +14,7 @@ public class SkeletonStunState : EnemyState
     {
         base.Enter();
 
-        enemy.fX.InvokeRepeating("RedColorBlink", 0, .1f);
+        enemy.fx.InvokeRepeating("RedColorBlink", 0, .1f);
 
         stateTimer = enemy.stunDuration;
 
@@ -24,7 +25,7 @@ public class SkeletonStunState : EnemyState
     {
         base.Exit();
 
-        enemy.fX.Invoke("CancelRedBlik", 0);
+        enemy.fx.Invoke("CancelColorChange", 0);
     }
 
     public override void Update()

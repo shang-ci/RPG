@@ -22,9 +22,13 @@ public class Entity : MonoBehaviour
     #region components
     public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
-    public EntityFX fX { get; private set; }
-
+    public EntityFX fx { get; private set; }
+    public SpriteRenderer spriteRenderer { get; private set; }
+    public CharacterStats stats { get; private set; }
+    public CapsuleCollider2D cd { get; private set; }
     #endregion
+
+    public System.Action onFlipped;
 
     protected virtual void Awake()
     {
@@ -34,9 +38,12 @@ public class Entity : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected virtual void Start()
     {
+        spriteRenderer  = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        fX = GetComponentInChildren<EntityFX>();
+        fx = GetComponent<EntityFX>();//不需要再孩子上获得
+        stats = GetComponent<CharacterStats>();
+        cd = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
@@ -45,13 +52,21 @@ public class Entity : MonoBehaviour
         
     }
 
-    public virtual void Damage()
+    public virtual void SlowEntityBy(float _slowPercentage, float flowDuration)//减缓一切速度函数
     {
-        fX.StartCoroutine("FlashFX");
+
+    }
+
+    protected virtual void ReturnDefaultSpeed()//动画速度恢复正常函数
+    {
+        anim.speed = 1;
+    }
+
+
+    public virtual void DamageImpack()
+    {
         StartCoroutine("HitKnockback");
-
-
-        Debug.Log(gameObject.name + "damage");
+        //Debug.Log(gameObject.name + "damage");
     }
 
     protected virtual IEnumerator HitKnockback()
@@ -78,12 +93,19 @@ public class Entity : MonoBehaviour
 
     public void Flip()
     {
+        //防止enemy被击飞时检测饿不到地面，进行翻转
+        if (isKnocked)
+            return;
+
         facingDir = facingDir * -1;
         facingRight = !facingRight;
         //transform.Rotate(0, 180, 0);
         Vector3 characterScale = transform.localScale;
         characterScale.x *= -1;
         transform.localScale = characterScale;
+
+        if (onFlipped != null)
+            onFlipped();
     }
 
     public void FlipController(float x)
@@ -98,7 +120,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    public virtual void ZeroVelocity()
+    public virtual void SetZeroVelocity()
     {
         if (isKnocked)
             return;
@@ -113,5 +135,10 @@ public class Entity : MonoBehaviour
 
         rb.velocity = new Vector2(xvelocity, yvelocity);
         FlipController(xvelocity);
+    }
+
+    public virtual void Die()
+    {
+
     }
 }
