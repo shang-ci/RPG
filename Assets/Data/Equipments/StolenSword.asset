@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca6ba1076f9cb345853d5e2d62211e7, type: 3}
+  m_Name: StolenSword
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: StolenSword
+  icon: {fileID: 1526008332, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  dropChance: 37
+  equipmentType: 0
+  strength: 0
+  agility: 5
+  intelligence: 0
+  vitality: 0
+  damage: 12
+  critChance: 7
+  critPower: 0
+  maxHealth: 0
+  armor: 0
+  evasion: 3
+  magicResistance: 0
+  fireDamage: 0
+  iceDamage: 0
+  lightingDamage: 0
+  craftingMaterials:
+  - data: {fileID: 11400000, guid: 5baf862d0c15d4247bffdb438745095b, type: 2}
+    stacks: 1
+  - data: {fileID: 11400000, guid: fa4549369ada6cd4c858b3f31a143887, type: 2}
+    stacks: 1
