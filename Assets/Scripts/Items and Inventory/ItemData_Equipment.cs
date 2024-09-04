@@ -16,6 +16,8 @@ public class ItemData_Equipment : ItemData
 {
     public EquipmentType equipmentType;
 
+    public float itemCooldown;//用于各种装备主动效果的冷却时间 
+
     //每个物品都带有不同的效果比如 冰冻闪电 减速增伤等等等等 
     public ItemEffect[] itemEffects;
 
@@ -31,7 +33,7 @@ public class ItemData_Equipment : ItemData
     public int critPower;       //150% 爆伤
 
     [Header("Defensive stats")]
-    public int maxHealth;
+    public int health;
     public int armor;
     public int evasion;//闪避值
     public int magicResistance;
@@ -59,7 +61,7 @@ public class ItemData_Equipment : ItemData
     {
         PlayerStat playerStat = PlayerManger.instance.player.GetComponent<PlayerStat>();
 
-        playerStat.maxHealth.AddModifier(maxHealth);
+        playerStat.health.AddModifier(health);
         playerStat.armor.AddModifier(armor);
         playerStat.evasion.AddModifier(evasion);
         playerStat.magicResistance.AddModifier(magicResistance);
@@ -84,7 +86,7 @@ public class ItemData_Equipment : ItemData
     {
         PlayerStat playerStat = PlayerManger.instance.player.GetComponent<PlayerStat>();
 
-        playerStat.maxHealth.RemoveModifier(maxHealth);
+        playerStat.health.RemoveModifier(health);
         playerStat.armor.RemoveModifier(armor);
         playerStat.evasion.RemoveModifier(evasion);
         playerStat.magicResistance.RemoveModifier(magicResistance);
@@ -101,5 +103,45 @@ public class ItemData_Equipment : ItemData
         playerStat.agility.RemoveModifier(agility);
         playerStat.intelligence.RemoveModifier(intelligence);
         playerStat.vitality.RemoveModifier(vitality);
+    }
+
+
+    //返回装备的描述 
+    public override string GetDescription()
+    {
+        sb.Length = 0;
+
+        AddItemDescription(strength, "Strength");
+        AddItemDescription(agility, "Agility");
+        AddItemDescription(intelligence, "Intelligence");
+        AddItemDescription(vitality, "Vitality");
+
+        AddItemDescription(damage, "Damage");
+        AddItemDescription(critChance, "CrityChance");
+        AddItemDescription(critPower, "CrityPower");
+
+        AddItemDescription(health, "health");
+        AddItemDescription(evasion, "Evasion");
+        AddItemDescription(armor, "Armor");
+        AddItemDescription(magicResistance, "MagicResistance");
+
+        AddItemDescription(fireDamage, "FireDamage");
+        AddItemDescription(iceDamage, "IceDamage");
+        AddItemDescription(lightingDamage, "LightingDamage");
+
+        return sb.ToString();
+    }
+
+    //制作描述的格式
+    private void AddItemDescription(int _value, string _name)
+    {
+        if(_value != 0)
+        {
+            if (sb.Length > 0)
+                sb.AppendLine();
+
+            if (_value > 0)
+                sb.Append("+ " + _value + " " + _name);
+        }
     }
 }

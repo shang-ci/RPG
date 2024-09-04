@@ -19,7 +19,8 @@ public class PlayerAnimationTriggers : MonoBehaviour
             {
                 EnemyStat _target = collider.GetComponent<EnemyStat>();
 
-                player.stats.DoDamage(_target);
+                if (_target != null)
+                    player.stats.DoDamage(_target);
 
                 //执行物品的效果 ,,防止在获得 拥有该效果的武器之前就调用这个装备导致为空 
                 Inventory.instance.GetEquipment(EquipmentType.Weapon)?.Effect(_target.transform);

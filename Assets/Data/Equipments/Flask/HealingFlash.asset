@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bca6ba1076f9cb345853d5e2d62211e7, type: 3}
-  m_Name: PlateArmor
+  m_Name: HealingFlash
   m_EditorClassIdentifier: 
   itemType: 1
-  itemName: PlateArmor
-  icon: {fileID: -1581127718, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
-  dropChance: 83
-  equipmentType: 1
+  itemName: HealingFlash
+  icon: {fileID: -410334530, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  dropChance: 82
+  equipmentType: 3
+  itemCooldown: 15
+  itemEffects:
+  - {fileID: 11400000, guid: 5e3a49141d63be540a71121247d5e675, type: 2}
   strength: 0
   agility: 0
   intelligence: 0
@@ -24,8 +27,8 @@ MonoBehaviour:
   damage: 0
   critChance: 0
   critPower: 0
-  maxHealth: 15
-  armor: 10
+  maxHealth: 0
+  armor: 0
   evasion: 0
   magicResistance: 0
   fireDamage: 0

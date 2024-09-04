@@ -76,14 +76,22 @@ public class Crystal_Skill_Controller : MonoBehaviour
 
     }
 
-    //爆炸造成伤害
+    //爆炸造成伤害-----同时实现护身符效果 
     public void AnimationExplodeEvent()
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, cd.radius);
         foreach (var hit in colliders)
         {
             if (hit.GetComponent<Enemy>() != null)
+            {
                 player.stats.DoMagicaDamage(hit.GetComponent<CharacterStats>());
+
+                //护身符
+                ItemData_Equipment equipmentAmulet = Inventory.instance.GetEquipment(EquipmentType.Amlet);
+
+                if (equipmentAmulet != null)
+                    equipmentAmulet.Effect(hit.transform);
+            } 
         }
     }
 

@@ -1,3 +1,4 @@
+using System.Text;
 using UnityEngine;
 
 public enum ItemType
@@ -16,4 +17,12 @@ public class ItemData : ScriptableObject
 
     [Range(0, 100)]
     public float dropChance;
+
+    protected StringBuilder sb = new StringBuilder();
+
+    //构建 字符串内容 ——在每个不同的装备上 返回不同的描述 
+    public virtual string GetDescription()
+    {
+        return "";
+    }
 }

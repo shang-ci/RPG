@@ -2,18 +2,21 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject charaterUI;
+
+    public UI_ItemToolTip itemToolTip;
+
     void Start()
     {
-        
+        //itemToolTip = GetComponentInChildren<UI_ItemToolTip>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
 
+    //用来选择展示的UI界面 
     public void SwitchTo(GameObject _menu)
     {
         for(int i = 0; i < transform.childCount; i++)

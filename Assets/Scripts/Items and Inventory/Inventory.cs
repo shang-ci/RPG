@@ -10,8 +10,8 @@ public class Inventory : MonoBehaviour
     public List<ItemData> satrtingItems;//玩家的初始装备和资源 
 
     //点击装备给玩家附上属性
-    public List<InventoryItem> equipment;//inventoryItems类型的列表
-    public Dictionary<ItemData_Equipment, InventoryItem> equipmentDictionary;//以ItemData为Key寻找InventoryItem的字典
+    public List<InventoryItem> equipment;
+    public Dictionary<ItemData_Equipment, InventoryItem> equipmentDictionary;
 
     public List<InventoryItem> inventory;//管理
     public Dictionary<ItemData, InventoryItem> inventoryDictianory;
@@ -23,11 +23,20 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Transform inventorySlotParent;
     [SerializeField] private Transform stashSlotParent;
     [SerializeField] private Transform equipmentSlotParent;
+    [SerializeField] private Transform statSlotParent;//管理 状态槽口 
 
 
     private UI_ItemSlot[] inventoryItemSlot;
     private UI_ItemSlot[] stashItemSlot;
     private UI_EquipementSlots[] equipmentSlot;
+    private UI_StatSlot[] statSlot;
+
+    [Header("Item Cooldown")]
+    private float lastTimeUsedFlask;
+    private float lastTimeUsedArmor;
+    //让这些有冷却的装备可以在游戏一开始就装上装备时就可以使用他们的技能效果 
+    private float flaskCooldown;//回血壶的冷却时间 
+    private float armorCooldown;//可以冻结敌人的盔甲的冷却时间 
 
 
     private void Awake()
@@ -52,6 +61,7 @@ public class Inventory : MonoBehaviour
         inventoryItemSlot = inventorySlotParent.GetComponentsInChildren<UI_ItemSlot>();
         stashItemSlot = stashSlotParent.GetComponentsInChildren<UI_ItemSlot>();
         equipmentSlot = equipmentSlotParent.GetComponentsInChildren<UI_EquipementSlots>();
+        statSlot = statSlotParent.GetComponentsInChildren<UI_StatSlot>();
 
         AddStartingItems();
     }
@@ -101,22 +111,27 @@ public class Inventory : MonoBehaviour
         {
             stashItemSlot[i].UpdateSlot(stash[i]);
         }
+
+        for( int i = 0; i < statSlot.Length ; i++)
+        {
+            statSlot[i].UpdateStatValueUI();
+        }
     }
 
     public void EquipItem(ItemData _item)
   {
       //解决在itemdata里拿不到子类equipment里的enum的问题
-      ItemData_Equipment newEquipment = _item as ItemData_Equipment;//https://www.bilibili.com/read/cv15551811/
+      ItemData_Equipment newEquipment = _item as ItemData_Equipment;
       //将父类转换为子类
       InventoryItem newItem = new InventoryItem(newEquipment);
   
       ItemData_Equipment oldEquipment = null;
   
-      foreach (KeyValuePair<ItemData_Equipment, InventoryItem> item in equipmentDictionary)//这种方法可以同时拿到key和value保存到item里面
+      foreach (KeyValuePair<ItemData_Equipment, InventoryItem> item in equipmentDictionary)
       {
-          if (item.Key.equipmentType == newEquipment.equipmentType)//将拿到的key与转换成itemdata_equipment类型的_item的type对比拿到存在的key
+          if (item.Key.equipmentType == newEquipment.equipmentType)
           {
-              oldEquipment = item.Key;//此key需保存在外部的data类型里
+              oldEquipment = item.Key;//此key保存在外部的data类型里
           }
       }//好像用foreach里的value和key无法对外部的list和字典进行操作
   
@@ -147,9 +162,20 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    //用于防止 物品数量超过槽口 导致 索引超出范围 
+    public bool CanAddItem()
+    {
+        if(inventory.Count >= inventoryItemSlot.Length)
+        {
+            return false;
+        }
+
+        return true;
+    }
+
     public void AddItem(ItemData _item)
     {
-        if (_item.itemType == ItemType.Equipment)
+        if (_item.itemType == ItemType.Equipment && CanAddItem())
             AddToInventory(_item);
         else if (_item.itemType == ItemType.Material)
             AddToStash(_item);
@@ -171,7 +197,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void AddToStash(ItemData _item)//向stash加物体的函数
+    private void AddToStash(ItemData _item)
     {
         if (stashDictionary.TryGetValue(_item, out InventoryItem value))//只有这种方法才能在查找到是否存在key对应value是否存在的同时，能够同时拿到value，其他方法的拿不到value
         {
@@ -272,5 +298,43 @@ public class Inventory : MonoBehaviour
         }
 
         return equipedItem;
+    }
+
+    //回血壶
+    public void UseFlask()
+    {
+        ItemData_Equipment currentFlask = GetEquipment(EquipmentType.Flask);
+
+        if (currentFlask == null) 
+            return;
+
+        bool canUseFlask = Time.time > lastTimeUsedFlask + flaskCooldown;
+
+        if (canUseFlask)
+        {
+            flaskCooldown = currentFlask.itemCooldown;
+            currentFlask.Effect(null);
+            lastTimeUsedFlask = Time.time;
+        }
+        else
+            Debug.Log("flask on colldown");
+
+    }
+
+
+    //盔甲装备 的使用 
+    public bool CanUseArmor()
+    {
+        ItemData_Equipment currentArmor = GetEquipment(EquipmentType.Armor);
+
+        if(Time.time > lastTimeUsedArmor + armorCooldown)
+        {
+            armorCooldown = currentArmor.itemCooldown;
+            lastTimeUsedArmor = Time.time;
+            return true;
+        }
+
+        Debug.Log("Armor on colldown");
+        return false;
     }
 }

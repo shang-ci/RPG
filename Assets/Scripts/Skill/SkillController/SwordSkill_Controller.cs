@@ -212,7 +212,15 @@ public class SwordSkill_Controller : MonoBehaviour
         // enemy.DamageEffect();
         //改变攻击方式，物理和三种法术攻击
         PlayerManger.instance.player.stats.DoDamage(enemy.GetComponent<CharacterStats>());
-        enemy.StartCoroutine("FreezeeTimerFor", freezeTimeDuration);
+       
+        //enemy.StartCoroutine("FreezeeTimerFor", freezeTimeDuration);
+        enemy.FreezeTimeFor(freezeTimeDuration);
+
+        //护身符
+        ItemData_Equipment equipmentAmulet = Inventory.instance.GetEquipment(EquipmentType.Amlet);
+
+        if (equipmentAmulet != null)
+            equipmentAmulet.Effect(enemy.transform);
     }
 
     private void SetupTargetsForBounce(Collider2D collision)

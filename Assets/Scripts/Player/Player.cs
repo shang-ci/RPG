@@ -84,6 +84,10 @@ public class Player : Entity
 
         if (Input.GetKeyDown(KeyCode.F))
             skill.crystal.CanUseSkill();
+
+        //主动调用回血壶
+        if (Input.GetKeyDown(KeyCode.P))
+            Inventory.instance.UseFlask();
     }
 
 

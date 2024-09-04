@@ -25,4 +25,15 @@ public class PlayerStat : CharacterStats
 
         GetComponent<PlayerItemDrop>()?.GenerateDrop();
     }
+
+    //在这里实现盔甲装备的效果 
+    protected override void DecreaseHealthBy(int _damage)
+    {
+        base.DecreaseHealthBy(_damage);
+
+        ItemData_Equipment currentArmor = Inventory.instance.GetEquipment(EquipmentType.Armor);
+
+        if (currentArmor != null)
+            currentArmor.Effect(player.transform);
+    }
 }

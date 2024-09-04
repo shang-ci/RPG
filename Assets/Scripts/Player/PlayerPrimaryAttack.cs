@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerPrimaryAttack : PlayerState
 {
-    private int comboCounter;
+    //也可用于 特殊装备计算攻击次数来触发装备的效果 eg:iceandfire
+    public  int comboCounter { get; private set; }
 
     private float lastTimeAttacked;
     private float comboWindow = 2;

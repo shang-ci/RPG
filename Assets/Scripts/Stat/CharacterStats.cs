@@ -1,4 +1,30 @@
+using System.Collections;
 using UnityEngine;
+
+public enum StatType
+{
+
+    strength, // 力量 增伤1点 爆伤增加 1% 物抗
+    agility,// 敏捷 闪避 1% 闪避几率增加 1%
+    intelligence,// 1 点 魔法伤害 1点魔抗 
+    vitality,//加血的
+
+
+    damage,
+    critChance,    // 暴击率
+    critPower,   //150% 爆伤
+
+
+    health,
+    armor,
+    evasion,//闪避值
+    magicResistance,
+
+
+    fireDamage,
+    iceDamage,
+    lightingDamage
+}
 
 public class CharacterStats : MonoBehaviour
 {
@@ -16,7 +42,7 @@ public class CharacterStats : MonoBehaviour
     public Stat critPower;       //150% 爆伤
 
     [Header("Defensive stats")]
-    public Stat maxHealth;
+    public Stat health;
     public Stat armor;
     public Stat evasion;//闪避值
     public Stat magicResistance;
@@ -77,6 +103,21 @@ public class CharacterStats : MonoBehaviour
            ApplyIgnitedDamage();
     }
 
+    //用于装备的某一效果它可以在一定时间内提升玩家的各种属性 
+    public virtual void IncreaseStatBy(int _modifier, float _duration, Stat _statToModify)
+    {
+        StartCoroutine(StatModCoroutine(_modifier, _duration, _statToModify));
+    }
+
+    private IEnumerator StatModCoroutine(int _modifier, float _duration, Stat _statToModify)
+    {
+        _statToModify.AddModifier(_modifier);
+
+        yield return new WaitForSeconds(_duration);
+
+        _statToModify.RemoveModifier(_modifier);
+    }
+
 
     public virtual void DoDamage(CharacterStats _targetStats)
     {
@@ -94,8 +135,10 @@ public class CharacterStats : MonoBehaviour
 
         //防御设置
         totalDamage = CheckTargetArmor(_targetStats, totalDamage);
-
         _targetStats.TakeDamage(totalDamage);
+
+        //如果你不想让物理攻击和魔法攻击一起释放的话你可以删除这一部分 
+        DoMagicaDamage(_targetStats);
     }
 
     public virtual void DoMagicaDamage(CharacterStats _targetStats)//法伤计算和造成元素效果调用的地方
@@ -345,8 +388,22 @@ public class CharacterStats : MonoBehaviour
     //统计生命值
     public int GetMaxHealthValue()
     {
-        return maxHealth.GetValue() + vitality.GetValue() * 10;
+        return health.GetValue() + vitality.GetValue() * 10;
     }
+
+
+    //回血函数 比如回血项链 的效果就需要调用它 
+    public virtual void IncreaseHealthBy(int _amount)
+    {
+        currentHealth += _amount;
+
+        if(currentHealth > GetMaxHealthValue())
+            currentHealth = GetMaxHealthValue();
+
+        if (onHealthChanged != null)
+            onHealthChanged();
+    }
+
 
     //用来改变当前生命值，不用特效
     protected virtual void DecreaseHealthBy(int _damage)
@@ -357,6 +414,27 @@ public class CharacterStats : MonoBehaviour
         {
             onHealthChanged();
         }
+    }
+
+    //这个函数用于给各项属性增加 buff 调用它就可以增加各种buff效果 ——这个函数其实是通过嗯手动给装备设置他想要增益的 类型 具体的数值要到data里面单独设置 
+    public  Stat GetStat(StatType _buffType)
+    {
+        if (_buffType == StatType.strength) return strength;
+        else if (_buffType == StatType.agility) return agility;
+        else if (_buffType == StatType.intelligence) return intelligence;
+        else if (_buffType == StatType.vitality) return vitality;
+        else if (_buffType == StatType.damage) return damage;
+        else if (_buffType == StatType.critChance) return critChance;
+        else if (_buffType == StatType.critPower) return critPower;
+        else if (_buffType == StatType.health) return health;
+        else if (_buffType == StatType.armor) return armor;
+        else if (_buffType == StatType.evasion) return evasion;
+        else if (_buffType == StatType.magicResistance) return magicResistance;
+        else if (_buffType == StatType.fireDamage) return fireDamage;
+        else if (_buffType == StatType.iceDamage) return iceDamage;
+        else if (_buffType == StatType.lightingDamage) return lightingDamage;
+
+        return null;
     }
 }
 
