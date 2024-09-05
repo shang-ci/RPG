@@ -3,11 +3,21 @@ using UnityEngine.EventSystems;
 
 public class UI_CraftSlot : UI_ItemSlot
 {
-    private void OnEnable()
+    protected override void Start()
     {
-        UpdateSlot(item);
+        base.Start();
     }
 
+    public void SetupCraftSlot(ItemData_Equipment _data)
+    {
+        if(_data == null )
+            return;
+
+        item.data = _data;
+
+        itemImage.sprite = _data.itemIcon;
+        itemText.text = _data.itemName;
+    }
 
     public override void OnPointerDown(PointerEventData eventData)
     {

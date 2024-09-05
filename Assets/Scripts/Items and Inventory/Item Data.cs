@@ -12,7 +12,7 @@ public class ItemData : ScriptableObject
 {
     public ItemType itemType;
     public string itemName;
-    public Sprite icon;//Í¼±ê
+    public Sprite itemIcon;//Í¼±ê
 
 
     [Range(0, 100)]

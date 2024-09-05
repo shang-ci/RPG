@@ -7,7 +7,7 @@ public enum StatType
     strength, // 力量 增伤1点 爆伤增加 1% 物抗
     agility,// 敏捷 闪避 1% 闪避几率增加 1%
     intelligence,// 1 点 魔法伤害 1点魔抗 
-    vitality,//加血的
+    vitality,//5点血量
 
 
     damage,
@@ -34,7 +34,7 @@ public class CharacterStats : MonoBehaviour
     public Stat strength; // 力量 增伤1点 爆伤增加 1% 物抗
     public Stat agility;// 敏捷 闪避 1% 闪避几率增加 1%
     public Stat intelligence;// 1 点 魔法伤害 1点魔抗 
-    public Stat vitality;//加血的
+    public Stat vitality;//加血的5点
 
     [Header("Offensive stats")]
     public Stat damage;
@@ -388,7 +388,7 @@ public class CharacterStats : MonoBehaviour
     //统计生命值
     public int GetMaxHealthValue()
     {
-        return health.GetValue() + vitality.GetValue() * 10;
+        return health.GetValue() + vitality.GetValue() * 5;
     }
 
 
