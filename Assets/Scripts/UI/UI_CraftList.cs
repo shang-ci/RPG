@@ -9,29 +9,23 @@ public class UI_CraftList : MonoBehaviour, IPointerDownHandler
     [SerializeField] private GameObject craftSlotPrefab;
 
     [SerializeField] private List<ItemData_Equipment> craftEquipment;
-    [SerializeField] private List<UI_CraftSlot> craftSlots;
+
 
     private void Start()
     {
-        AssingCraftSlots();
+        //让初始界面是剑的工艺界面
+        transform.parent.GetChild(0).GetComponent<UI_CraftList>().SetupCraftList();
+        SetupDefaultCraftWindow();
     }
 
-    private void AssingCraftSlots()
-    {
-        for(int i = 0; i < craftSlotParent.childCount; i++)
-        {
-            craftSlots.Add(craftSlotParent.GetChild(i).GetComponent<UI_CraftSlot>());
-        }
-    }
+
 
     public void SetupCraftList()
     {
-        for(int i = 0; i< craftSlots.Count; i++)
+        for(int i = 0; i< craftSlotParent.childCount; i++)
         {
-            Destroy(craftSlots[i].gameObject);
+            Destroy(craftSlotParent.GetChild(i).gameObject);
         }
-
-        craftSlots = new List<UI_CraftSlot>();
 
         for(int i = 0;i < craftEquipment.Count; i++)
         {
@@ -43,5 +37,11 @@ public class UI_CraftList : MonoBehaviour, IPointerDownHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         SetupCraftList();   
+    }
+
+    public void SetupDefaultCraftWindow()
+    {
+        if (craftEquipment[0] != null)
+            GetComponentInParent<UI>().craftWindow.SetupCraftWindow(craftEquipment[0]);
     }
 }

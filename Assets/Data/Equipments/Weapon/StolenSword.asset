@@ -37,4 +37,4 @@ MonoBehaviour:
   - data: {fileID: 11400000, guid: 5baf862d0c15d4247bffdb438745095b, type: 2}
     stacks: 1
   - data: {fileID: 11400000, guid: fa4549369ada6cd4c858b3f31a143887, type: 2}
-    stacks: 1
+    stacks: 5

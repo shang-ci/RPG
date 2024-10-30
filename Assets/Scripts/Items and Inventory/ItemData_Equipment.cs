@@ -16,10 +16,12 @@ public class ItemData_Equipment : ItemData
 {
     public EquipmentType equipmentType;
 
+    [Header("Unique effect")]
     public float itemCooldown;//用于各种装备主动效果的冷却时间 
-
     //每个物品都带有不同的效果比如 冰冻闪电 减速增伤等等等等 
     public ItemEffect[] itemEffects;
+    [TextArea]
+    public string itemEffectDes;//装备效果的描述
 
     [Header("Major stats")]
     public int strength; // 力量 增伤1点 爆伤增加 1% 物抗
@@ -128,6 +130,13 @@ public class ItemData_Equipment : ItemData
         AddItemDescription(fireDamage, "FireDamage");
         AddItemDescription(iceDamage, "IceDamage");
         AddItemDescription(lightingDamage, "LightingDamage");
+        
+
+        if(itemEffectDes.Length > 0)
+        {
+            sb.AppendLine();
+            sb.Append(itemEffectDes);
+        }
 
         return sb.ToString();
     }

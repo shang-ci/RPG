@@ -17,12 +17,21 @@ public class UI_CraftSlot : UI_ItemSlot
 
         itemImage.sprite = _data.itemIcon;
         itemText.text = _data.itemName;
+
+        //自适应字体大小
+        //if (itemText.text.Length > 12)
+        //    itemText.fontSize *= .7f;
+        //else
+        //    itemText.fontSize = 24;
     }
 
     public override void OnPointerDown(PointerEventData eventData)
     {
-        ItemData_Equipment craftData = item.data as ItemData_Equipment;
+        //ItemData_Equipment craftData = item.data as ItemData_Equipment;
 
-        Inventory.instance.CanCraft(craftData, craftData.craftingMaterials);
+        //Inventory.instance.CanCraft(craftData, craftData.craftingMaterials);
+
+
+        ui.craftWindow.SetupCraftWindow(item.data as ItemData_Equipment);
     }
 }

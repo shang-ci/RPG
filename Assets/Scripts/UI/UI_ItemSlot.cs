@@ -55,6 +55,8 @@ public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHand
        if (item == null)
            return;
 
+        ui.itemToolTip.HideToolTip();//当装上装备时，就要把tip隐藏了
+
        //售卖物品 
         if (Input.GetKey(KeyCode.LeftControl))
         {
@@ -71,7 +73,25 @@ public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHand
         if(item == null) 
             return;
 
+        //让tip随鼠标移动
+        Vector2 mousePosition = Input.mousePosition;
+
+        float xOffset = 0;
+        float yOffset = 0;
+
+        if (mousePosition.x > 600)
+            xOffset = -100;
+        else
+            xOffset = 100;
+
+        if (mousePosition.y > 320)
+            yOffset = -100;
+        else
+            yOffset = 100;
+
+
         ui.itemToolTip.ShowToolTip(item.data as ItemData_Equipment);
+        ui.skillToolTip.transform.position = new Vector2(mousePosition.x + xOffset, mousePosition.y + yOffset);
     }
 
     public void OnPointerExit(PointerEventData eventData)

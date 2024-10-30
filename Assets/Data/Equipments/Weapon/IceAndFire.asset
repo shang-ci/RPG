@@ -21,6 +21,7 @@ MonoBehaviour:
   itemEffects:
   - {fileID: 11400000, guid: 20e323413c50be54c95d1412bca5409f, type: 2}
   - {fileID: 11400000, guid: 33001d654c6e8ba49b7c90fed20ed3cd, type: 2}
+  itemEffectDes: 'Unique: 3 attacks take a fire and ice'
   strength: 0
   agility: 0
   intelligence: 0
@@ -35,4 +36,8 @@ MonoBehaviour:
   fireDamage: 8
   iceDamage: 12
   lightingDamage: 0
-  craftingMaterials: []
+  craftingMaterials:
+  - data: {fileID: 11400000, guid: 5baf862d0c15d4247bffdb438745095b, type: 2}
+    stacks: 2
+  - data: {fileID: 11400000, guid: fa4549369ada6cd4c858b3f31a143887, type: 2}
+    stacks: 5

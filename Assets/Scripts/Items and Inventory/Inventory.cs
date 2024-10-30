@@ -71,7 +71,8 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < satrtingItems.Count; i++)
         {
-            AddItem(satrtingItems[i]);
+            if (satrtingItems[i] != null)
+                 AddItem(satrtingItems[i]);
         }
     }
 
@@ -185,7 +186,7 @@ public class Inventory : MonoBehaviour
 
     private void AddToInventory(ItemData _item)
     {
-        if (inventoryDictianory.TryGetValue(_item, out InventoryItem value))//只有这种方法才能在查找到是否存在key对应value是否存在的同时，能够同时拿到value，其他方法的拿不到value
+        if (inventoryDictianory.TryGetValue(_item, out InventoryItem value))
         {
             value.AddStack();
         }//字典的使用，通过ItemData类型的数据找到InventoryItem里的与之对应的同样类型的数据

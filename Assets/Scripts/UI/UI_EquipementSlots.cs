@@ -19,6 +19,9 @@ public class UI_EquipementSlots : UI_ItemSlot
 
         Inventory.instance.Unequipment(item.data as ItemData_Equipment);
         Inventory.instance.AddItem(item.data as ItemData_Equipment);
+
+        ui.itemToolTip.HideToolTip();//当装上装备时，就要把tip隐藏了
+
         CleanUpSlot();
     }
 }
